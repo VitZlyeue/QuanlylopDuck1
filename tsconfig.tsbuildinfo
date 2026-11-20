@@ -1,1 +1,1 @@
-{"root":["./src/App.tsx","./src/db.ts","./src/main.tsx","./src/random.ts"],"errors":true,"version":"5.8.3"}
+{"root":["./App.tsx","./db.ts","./main.tsx","./random.ts","./vite.config.ts"],"version":"5.6.3"}
