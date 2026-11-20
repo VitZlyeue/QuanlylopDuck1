@@ -9,6 +9,7 @@ import {
   Sparkles, Trophy, Users, Volume2, VolumeX, WandSparkles, X, Trash2, Edit3,
   Play, Pause, Maximize2, LayoutDashboard
 } from 'lucide-react'
+import { Analytics } from '@vercel/analytics/react'
 import { db, defaultSettings, getSettings, makeId, saveSettings, type AppSettings, type GameResult, type Student } from './db'
 import { chooseStudents, randomInteger } from './random'
 
@@ -331,6 +332,7 @@ function App() {
       <footer className="footer"><span>© 2026 CLASS ARENA</span><span><i/> LOCAL-FIRST CLASSROOM EXPERIENCE</span></footer>
     </main>
     {randomVisible&&<button className="random-bubble" onClick={()=>setRandomOpen(v=>!v)} title="Random nhanh">🎲</button>}{randomOpen&&<div className="random-popover"><button className="random-close" onClick={()=>setRandomOpen(false)}>×</button><b>RANDOM NHANH</b><p>{winners.length?winners.map(x=>x.name).join(', '):'Sẵn sàng chọn ngẫu nhiên'}</p><button className="btn btn-primary btn-full" onClick={()=>{setPage('games');setRandomOpen(false);void runGame()}}>BẮT ĐẦU RANDOM</button><button className="text-btn" onClick={()=>setRandomVisible(false)}>Ẩn bong bóng</button></div>}{toast&&<div className="toast"><Check size={16}/>{toast}</div>}
+    <Analytics />
   </div>
 }
 function Stat({icon,label,value,note,color}:{icon:React.ReactNode;label:string;value:number|string;note:string;color:string}){return <div className="stat-card"><div className={`stat-icon ${color}`}>{icon}</div><div><small>{label}</small><strong>{value}</strong><span>{note}</span></div></div>}
