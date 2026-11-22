@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "type": "multiple",
+    "question": "Thủ đô của Việt Nam là gì?",
+    "options": ["Hà Nội", "Huế", "Đà Nẵng", "TP. Hồ Chí Minh"],
+    "correctAnswer": "Hà Nội",
+    "points": 10
+  },
+  {
+    "id": 2,
+    "type": "truefalse",
+    "question": "Trái Đất quay quanh Mặt Trời.",
+    "options": ["Đúng", "Sai"],
+    "correctAnswer": true,
+    "points": 10
+  },
+  {
+    "id": 3,
+    "type": "fill",
+    "question": "Điền vào chỗ trống",
+    "sentence": "Nước sôi ở nhiệt độ ____ độ C (áp suất tiêu chuẩn).",
+    "words": ["100", "50", "0", "200"],
+    "correctAnswer": "100",
+    "points": 10
+  }
+]
