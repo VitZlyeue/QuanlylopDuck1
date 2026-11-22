@@ -1,1 +1,0 @@
-# Avatar nhân vật người chiến thắng\n\nĐặt 20 ảnh PNG đã tách nền tại thư mục này với tên `avatar-1.png` đến `avatar-20.png`. Ứng dụng tự chọn ảnh tương ứng khi công bố người chiến thắng. Ảnh nên có nền trong suốt, nhân vật đứng toàn thân.\n
